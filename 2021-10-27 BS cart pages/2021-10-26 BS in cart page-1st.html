@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <header id="header" class="d-flex">
+        <!-- logo 位置   -->
+        <div class="logo-container w-100 justify-content-center align-items-center ml-5 p-2">
+            <a class="navbar-brand mb-2" href="#">
+                <img class="logo ml-5" src="./img/logo-1.svg" alt="">
+            </a>
+        </div>
+        <!-- 導覽列 -->
+        <nav class="navbar navbar-expand-md navbar-light bg-white align-items-center pt-4">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- 這邊開始是右方文字選項 -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav flex-grow-1 d-md-flex justify-content-end mr-0 pb-md-4">
+                    <li class="nav-item active pt-3 pr-3 pb-3 pl-3">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item pt-3 pr-2 pb-3 pl-3">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item pt-3 pr-4 pb-3 pl-3">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item pt-3 pr-3 pb-3 pl-1">
+                        <a class="nav-link contact" href="#">Contact</a>
+                    </li>
+
+                    <div class="member-zone d-flex justify-content-between align-items-center mr-5 pr-1">
+                        <li class="cart">
+                            <a class="navbar-brand" href="#">
+                                <i class="bi bi-cart-fill"></i>
+                            </a>
+                        </li>
+                        <li class="member">
+                            <a class="navbar-brand" href="#">
+                                <i class="bi bi-person-circle"></i>
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- 中間的購物車區塊 -->
+    <main id="main">
+        <div class="canvas bg-secondary">
+            <div class="container-up-bot container-lg pt-5 pb-5">
+                <div class="container-lr container-lg pl-5 pr-5">
+                    <div class="content-border container-lg pt-5 pl-0 pb-5 pr-5 ">
+                        <div class="content container-lg ml-5">
+                            <!-- 購物車文字 -->
+                            <h2 class="cart-text font-weight-bold">購物車</h2>
+                            <!-- 圓形圖標 1  -->
+                            <div
+                                class="progress-bar-container d-flex align-items-center mt-1 ml-2 mb-0 pl-0 pt-3 pb-5">
+                                <div role="button"
+                                    class="bar-icon-1 text-center text-white icon border border-white bg-success">
+                                    1</div>
+                                <!-- 進度條綠色 -->
+                                <div class="progress w-25">
+                                    <div class="progress-bar bg-success phase-1" role="progressbar" style="width: 32%;"
+                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <!-- 圓形圖標 2  -->
+                                <div role="button" class="bar-icon-2 text-center icon border border-white bg-white">2
+                                </div>
+                                <!-- 進度條 -->
+                                <div class="progress w-25">
+                                    <div class="progress-bar bg-success phase-2" role="progressbar" style="width: 0%;"
+                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <!-- 圓形圖標 3  -->
+                                <div role="button" class="bar-icon-2 text-center icon border border-white bg-white">3
+                                </div>
+                                <!-- 進度條 -->
+                                <div class="progress w-25">
+                                    <div class="progress-bar bg-success phase-3" role="progressbar" style="width: 0%;"
+                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <!-- 圓形圖標 4  -->
+                                <div role="button" class="bar-icon-4 text-center icon border border-white bg-white">4
+                                </div>
+                            </div>
+                            <!-- 進度條下方文字 -->
+                            <div class="cart-text-container d-flex justify-content-around mr-5 mb-5">
+                                <h6 class="cart-text font-weight-bold">確認購物車</h6>
+                                <h6 class="cart-text font-weight-bold ">付款與運送方式</h6>
+                                <h6 class="cart-text font-weight-bold pr-4">填寫資料</h6>
+                                <h6 class="cart-text font-weight-bold mr-2 pr-3">完成訂購</h6>
+                            </div>
+                            <section class="orders w-100 border-top ">
+                                <!-- 訂單明細文字 -->
+                                <h4 class="cart-text font-weight-normal mt-4">訂單明細</h4>
+                                <!-- 雞肉捲卡片區 -->
+                                <div class="card-container border-bottom  d-flex">
+                                    <div class="card w-50 h-25 border-bottom mt-5 mb-3" style="max-width: 540px;">
+                                        <div class="row no-gutters">
+                                            <!-- 原雞肉捲卡片圖, 改成自攝街貓貓掌 -->
+                                            <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                                <img class="chicken rounded-pill w-50" src="./img/mangostana.jpg"
+                                                    alt="...">
+                                            </div>
+                                            <!-- 雞肉捲卡片的文字和編號 -->
+                                            <div class="col-md-8 mt-4 pl-0">
+                                                <div class="card-body ml-0 pl-1">
+                                                    <h5 class="card-text">水果之后: 熱帶山竹</h5>
+                                                    <p class="card-text"><small class="text-muted">#41551</small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 數量輸入框 -->
+                                    <div class="count w-100 d-flex justify-content-end mt-5">
+                                        <form class="form-inline">
+                                            <div class="form-group font-weight-bold">
+                                                <label for="inputPassword6">-</label>
+                                                <input type="text" id="inputPassword6" class="form-control mx-sm-3 w-25"
+                                                    aria-describedby="passwordHelpInline" placeholder="1">
+                                                <label for="inputPassword6">+</label>
+                                                <small id="passwordHelpInline" class="text-muted ml-4">
+                                                    $10.50 </small>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- 墨西哥捲卡片區 -->
+                                <div class="card-container border-bottom d-flex">
+                                    <div class="card w-50 h-25 border-bottom mt-5 mb-3" style="max-width: 540px;">
+                                        <div class="row no-gutters">
+                                            <!-- 原墨西哥捲圖片, 改成慶記示意圖, 來自自由時報, 2019/02/18 6:00, 記者謝介裕／南投報導 -->
+                                            <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                                <img class="chicken rounded-pill w-50" src="./img/bullet.jpg" alt="...">
+                                            </div>
+                                            <!-- 墨西哥捲卡片的文字和編號 -->
+                                            <div class="col-md-8 mt-4 pl-0">
+                                                <div class="card-body ml-0 pl-1">
+                                                    <h5 class="card-text">地方名產: 慶記
+                                                        </p>
+                                                        <p class="card-text"><small class="text-muted">#66999</small>
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 數量輸入框 -->
+                                    <div class="count w-100 d-flex justify-content-end mt-5">
+                                        <form class="form-inline">
+                                            <div class="form-group font-weight-bold">
+                                                <label for="inputPassword6">-</label>
+                                                <input type="text" id="inputPassword6" class="form-control mx-sm-3 w-25"
+                                                    aria-describedby="passwordHelpInline" placeholder="1">
+                                                <label for="inputPassword6">+</label>
+                                                <small id="passwordHelpInline" class="text-muted ml-4">
+                                                    $10.50 </small>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- 早餐卡片區 -->
+                                <div class="card-container border-bottom d-flex">
+                                    <div class="card w-50 h-25 border-top mt-5 mb-3" style="max-width: 540px;">
+                                        <div class="row no-gutters">
+                                            <!-- 原早餐圖片, 改成上群動物醫院(2020/4/20)的吉娃娃眼睛 -->
+                                            <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                                <img class="chicken rounded-pill w-50" src="./img/bubble.png" alt="...">
+                                            </div>
+                                            <!-- 早餐卡片的文字和編號 -->
+                                            <div class="col-md-8 mt-4 pl-0">
+                                                <div class="card-body ml-0 pl-1">
+                                                    <h5 class="card-text">新鮮原料: 珍珠
+                                                        </p>
+                                                        <p class="card-text"><small class="text-muted">#86577</small>
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 數量輸入框 -->
+                                    <div class="count w-100 d-flex justify-content-end mt-5">
+                                        <form class="form-inline">
+                                            <div class="form-group font-weight-bold">
+                                                <label for="inputPassword6">-</label>
+                                                <input type="text" id="inputPassword6" class="form-control mx-sm-3 w-25"
+                                                    aria-describedby="passwordHelpInline" placeholder="1">
+                                                <label for="inputPassword6">+</label>
+                                                <small id="passwordHelpInline" class="text-muted ml-4">
+                                                    $10.50 </small>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- 總計數量外框 -->
+                                <div class="total-count w-100 h-100 mt-4 ml-5 pb-0">
+                                    <!-- 數量外框和金額 -->
+                                    <form class="amount form-inline d-flex justify-content-end mr-5">
+                                        <div class="form-group font-weight-bold mr-0">
+                                            <small id="passwordHelpInline" class="number text-muted mr-5 pr-0">
+                                                數量: </small>
+                                            <span class="text-lg ml-4 pl-0">3</span>
+                                        </div>
+                                    </form>
+                                    <!-- 小計和金額 -->
+                                    <form class="form-inline d-flex justify-content-end mr-5">
+                                        <div class="form-group font-weight-bold mr-0">
+                                            <small id="passwordHelpInline" class="text-muted mr-5 pr-5">
+                                                小計: </small>
+                                            <span class="text-lg ml-5">$24.90</span>
+                                        </div>
+                                    </form>
+                                    <!-- 運費和金額 -->
+                                    <form class="form-inline d-flex justify-content-end mr-5">
+                                        <div class="form-group font-weight-bold mr-0">
+                                            <small id="passwordHelpInline" class="text-muted mr-5 pr-5">
+                                                運費: </small>
+                                            <span class="text-lg ml-5">$24.90</span>
+                                        </div>
+                                    </form>
+                                    <!-- 總計和金額 -->
+                                    <form class="form-inline d-flex justify-content-end mr-5">
+                                        <div class="form-group font-weight-bold mr-0">
+                                            <small id="passwordHelpInline" class="text-muted mr-5 pr-5">
+                                                總計: </small>
+                                            <span class="text-lg ml-5">$24.90</span>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- 返回購物箭頭以及下一步按鈕 -->
+                                <div class="next-step-container border-top w-100 mt-4 pt-4 d-flex flex-wrap justify-content-lg-between">
+                                    <div class="icon-arrow-container d-flex flex-wrap">
+                                        <i class="bi bi-arrow-left-short mt-2 "></i>
+                                        <h6 class="button-text font-weight-normal pt-3 ml-1">返回購物</h6>
+                                    </div>
+                                    <button type="button" class="btn btn-primary">下一步</button>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+    <footer class="foooter mt-5">
+        <div
+            class="bottom-menu-container .container  px-5 py-24 mx-auto d-flex align-items-center align-items-lg-start flex-nowrap flex-wrap flex-column">
+            <div class="card-container d-flex">
+                <div class="card w-75 h-25 border-0 mt-1 mb-3" style="max-width: 540px;">
+                    <div class="row no-gutters">
+                        <!-- 數位方塊 logo -->
+                        <div class="col-md-4 d-flex justify-content-center align-items-center mt-2">
+                            <img class="menu-mark rounded-pill w-50 " src="./img/menu-mark.svg" alt="...">
+                        </div>
+                        <!-- 公司文字和標語 -->
+                        <div class="tail-block-contaainer col-md-8 ml-0 mt-1 pt-2">
+                            <div class="card-body ml-0 pl-0">
+                                <h5 class="card-text tail-block">數位方塊</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 數位方塊底下標語 -->
+                    <h6 class="card-text pl-4"><small class="text-muted">Manners Maketh Man</small></h6>
+                </div>
+            </div>
+            <div class="categories row row-cols-1 row-cols-md-3 g-4 d-flex justify-content-around align-self-end mr-4 pr-5">
+                <div class="col-md-2">
+                    <div class="card  border-0">
+                        <div class="card-body">
+                            <h6 class="card-title font-weight-bold m-0">分類</h6>
+                            <div class="p-container d-flex flex-column">
+                                <p class="card-text">電話在那裡</p>
+                                <p class="card-text">我要走過去</p>
+                                <p class="card-text">我越來越接近電話了</p>
+                                <p class="card-text">我們最期待的就要來了</p>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card  border-0">
+                        <div class="card-body">
+                            <h6 class="card-title font-weight-bold">分類</h6>
+                            <div class="p-container d-flex flex-column">
+                                <p class="card-text">電話在那裡</p>
+                                <p class="card-text">我要走過去</p>
+                                <p class="card-text">我越來越接近電話了</p>
+                                <p class="card-text">我們最期待的就要來了</p>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card  border-0">
+                        <div class="card-body">
+                            <h6 class="card-title font-weight-bold">分類</h6>
+                            <div class="p-container d-flex flex-column">
+                                <p class="card-text">電話在那裡</p>
+                                <p class="card-text">我要走過去</p>
+                                <p class="card-text">我越來越接近電話了</p>
+                                <p class="card-text">我們最期待的就要來了</p>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card  border-0">
+                        <div class="card-body">
+                            <h6 class="card-title font-weight-bold">分類</h6>
+                            <div class="p-container d-flex flex-column">
+                                <p class="card-text">電話在那裡</p>
+                                <p class="card-text">我要走過去</p>
+                                <p class="card-text">我越來越接近電話了</p>
+                                <p class="card-text">我們最期待的就要來了</p>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="privacy-container bg-light d-flex justify-content-between  pt-2 pl-5 pr-4">
+            <p class="copyright text-secondary pl-4">© 2020 Tailblocks — <a href="" class="who text-secondary">@There is no spoon</a></p>
+            <div class="bottom-log-container">
+                <i role="button" class="bi bi-facebook text-muted"></i>
+                <i role="button" class="bi bi-twitter text-muted pl-3 pr-3"></i>
+                <i role="button" class="bi bi-instagram text-muted"></i>
+                <i class="bi bi-linkedin text-muted pl-3 pr-5"></i>
+            </div>
+        </div>
+
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

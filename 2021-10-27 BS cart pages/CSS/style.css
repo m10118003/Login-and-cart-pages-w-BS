@@ -1,0 +1,249 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css");
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  transition: 0.3s;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  height: 92px;
+}
+
+#header .logo {
+  width: 106px;
+  height: 60px;
+}
+
+#header nav .navbar-nav > .nav-item > a {
+  color: #374151;
+  font-weight: 600;
+}
+
+#header nav .navbar-nav > .member-zone > .cart > a {
+  color: #374151;
+  font-weight: 600;
+  font-size: 180%;
+}
+
+#header nav .navbar-nav > .member-zone > .member > a {
+  color: #374151;
+  font-weight: 600;
+  font-size: 180%;
+}
+
+@media screen and (max-width: 1243px) {
+  .logo-container {
+    margin-left: 25px !important;
+  }
+  .navbar-collapse {
+    margin-left: 300px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-toggler {
+    margin-left: 360px;
+  }
+  .navbar-nav {
+    width: calc(600px +1px);
+    background-color: #ffffff;
+    margin-right: 500px;
+    padding: 20px;
+  }
+}
+
+main .canvas {
+  background-color: #d1d5db !important;
+}
+
+main .canvas .container-up-bot .container-lr .content-border {
+  background-color: #f3f4f6 !important;
+  border-radius: 10px;
+}
+
+main .canvas .container-up-bot .container-lr .content-border h2 {
+  margin-top: -10px !important;
+  margin-left: -28px !important;
+}
+
+main .canvas .container-up-bot .container-lr .content-border .progress-bar-container {
+  margin-top: 30px;
+  margin-left: 80px !important;
+}
+
+main .canvas .container-up-bot .container-lr .content-border .progress {
+  width: 21% !important;
+  height: 8px;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+main .canvas .container-up-bot .container-lr .content-border .progress-bar {
+  background-color: #6ee7b7 !important;
+  border-radius: 5px;
+}
+
+main .canvas .container-up-bot .container-lr .content-border .icon {
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 60px;
+  padding: 5px;
+}
+
+main .canvas .container-up-bot .container-lr .content-border .bar-icon-1 {
+  background-color: #10b981 !important;
+}
+
+main .canvas .container-up-bot .container-lr .content-border .cart-text-container {
+  width: 98% !important;
+  margin-top: -32px !important;
+  padding-top: -20px;
+}
+
+@media screen and (max-width: 768px) {
+  main .canvas .container-up-bot .container-lr .content-border .progress-bar-container {
+    margin-top: 30px;
+    margin-left: calc(10vw - 90px) !important;
+    margin-right: calc(10vw - 10px) !important;
+  }
+  main .canvas .container-up-bot .container-lr .content-border .progress {
+    width: 21% !important;
+    height: 8px;
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+  main .canvas .container-up-bot .container-lr .content-border .progress-bar {
+    background-color: #6ee7b7 !important;
+    border-radius: 5px;
+  }
+  main .canvas .container-up-bot .container-lr .content-border .icon {
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 60px;
+    padding: 5px;
+  }
+  main .canvas .container-up-bot .container-lr .content-border .bar-icon-1 {
+    background-color: #10b981 !important;
+  }
+  main .canvas .container-up-bot .container-lr .content-border .cart-text-container {
+    width: 98% !important;
+    margin-top: -32px !important;
+    margin-left: -25px !important;
+  }
+}
+
+main .canvas .container-up-bot .container-lr .content-border .orders {
+  width: 97% !important;
+  margin-top: -30px !important;
+}
+
+main .canvas .container-up-bot .container-lr .content-border .orders .card-container {
+  margin-top: -40px;
+  margin-left: -25px;
+}
+
+main .canvas .container-up-bot .container-lr .content-border .orders .card-container .card {
+  width: 60% !important;
+  border-style: none !important;
+  background-color: #f3f4f6;
+}
+
+main .canvas .container-up-bot .container-lr .content-border .orders .card-container .card .card-text {
+  margin-left: -20px;
+}
+
+main .canvas .container-up-bot .container-lr .content-border .orders .card-container .card .card-text p {
+  margin-top: -10px;
+  padding-left: 20px;
+}
+
+main .canvas .container-up-bot .container-lr .content-border .orders .card-container .card .text-muted {
+  color: #bcc1c9 !important;
+}
+
+main .canvas .container-up-bot .container-lr .content-border .orders .card-container .count {
+  margin-right: -100px;
+}
+
+main .canvas .container-up-bot .container-lr .content-border .orders .card-container .count .form-control {
+  width: 10% !important;
+  height: 200%;
+  background-color: #f3f4f6 !important;
+  font-size: 90%;
+  font-weight: 600;
+  color: black !important;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+main .canvas .container-up-bot .container-lr .content-border .orders .card-container .count .text-muted {
+  color: black !important;
+}
+
+main .canvas .container-up-bot .container-lr .content-border .total-count .amount > .form-group > .number {
+  padding-right: calc(10vw - 28px) !important;
+}
+
+main .canvas .container-up-bot .container-lr .content-border .next-step-container .icon-arrow-container .bi-arrow-left-short {
+  font-size: x-large;
+}
+
+main .canvas .container-up-bot .container-lr .content-border .next-step-container .btn {
+  background-color: #3b82f6;
+}
+
+footer .bottom-menu-container .categories {
+  margin-top: calc(5vw - 160px);
+  margin-right: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .card-container {
+    margin-left: 100px;
+  }
+  .card-container .card {
+    margin-left: 100px;
+  }
+  .card-container .card h6 {
+    margin-top: -50px !important;
+    margin-left: -80px !important;
+  }
+  .card-container .card .menu-mark {
+    width: 30% !important;
+    margin-left: -250px;
+  }
+  .card-container .card .tail-block {
+    margin-top: -65px;
+    padding-left: -250px !important;
+  }
+  .categories {
+    margin-top: 20px !important;
+    margin-left: 300px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .card-container {
+    margin-left: 100px;
+  }
+  .card-container .card {
+    margin-left: 100px;
+  }
+  .card-container .card .text-muted {
+    margin-left: -55px !important;
+  }
+  .card-container .card .menu-mark {
+    width: 10% !important;
+  }
+  .card-container .card .tail-block {
+    margin-left: -20px !important;
+  }
+  .categories {
+    margin-top: 50px !important;
+  }
+}
